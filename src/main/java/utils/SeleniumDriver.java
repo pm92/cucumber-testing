@@ -20,6 +20,10 @@ public class SeleniumDriver {
 
     private SeleniumDriver() {
 
+        String browserType = System.getProperty("browserType");
+        if(browserType != null)
+            System.out.println(browserType);
+
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
 
