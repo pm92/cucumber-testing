@@ -24,4 +24,8 @@ public class HomePageLocators {
 
     @FindBy(how = How.XPATH, using = "//input[@value='Log Out']")
     public WebElement logoutButton;
+
+    @FindBy(how = How.XPATH, using = "html/body/nav/ul/li[5]/a")
+    public WebElement addItemsButton;
+
 }

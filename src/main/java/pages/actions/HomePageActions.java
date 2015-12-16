@@ -26,4 +26,11 @@ public class HomePageActions {
     public boolean isLogoutButton() {
         return SeleniumHelper.isElementPresent(locators.logoutButton);
     }
+
+    public void goToAddItemsPage() { locators.addItemsButton.click();}
+
+    public void logoutFromSystem(){ locators.logoutButton.click(); }
+
+    public boolean isUserNotLogged(){ return SeleniumHelper.isElementPresent(locators.loginLink);}
+
 }
